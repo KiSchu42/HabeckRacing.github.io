@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Formula1";
+  src: url("Formula1-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Formula1-Bold";
+  src: url("Formula1-Bold.otf") format("opentype");
+}
