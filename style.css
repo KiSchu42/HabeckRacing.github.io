@@ -1,138 +1,136 @@
 body {
-				background-color: #121212;
-        font-family: "Formula1", sans-serif;
-        color: #fff;
-			}
+	background-color: #121212;
+	font-family: "Formula1", sans-serif;
+	color: #fff;
+}
 
 
-      h1 {
-        font-family: "Formula1-Bold", sans-serif; 
-      }
+h1 {
+	font-family: "Formula1-Bold", sans-serif;
+}
 
-      h2 {
-        font-family: "Formula1-Bold", sans-serif; 
-      }
-      
-      h3 {
-        font-size: small;
-      }
+h2 {
+	font-family: "Formula1-Bold", sans-serif;
+}
 
-      span.smaller {
-        font-size: smaller;
-      }
+h3 {
+	font-size: small;
+}
 
-			.tabs {
-				display: flex;
-				gap: 10px;
-				margin-bottom: 16px;
-			}
+span.smaller {
+	font-size: smaller;
+}
 
-			.tab-button {
-        font-family: "Formula1";
-				padding: 8px 16px;
-				background: #2e2e2e;
-        color: white;
-				border: none;
-				cursor: pointer;
-			}
+.tabs {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 16px;
+}
 
-			.tab-button.active {
-				background: #0047ab;
-				color: white;
-				font-weight: bold;
-			}
+.tab-button {
+	font-family: "Formula1";
+	padding: 8px 16px;
+	background: #2e2e2e;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
 
-			.tab-content {
-				display: none;
-			}
+.tab-button.active {
+	background: #0047ab;
+	color: white;
+	font-weight: bold;
+}
 
-			.tab-content.active {
-				display: block;
-			}
+.tab-content {
+	display: none;
+}
 
-			.f1-table {
-				font-family: "Formula1", sans-serif;
-				width: 100%;
-				border-collapse: collapse;
-				background-color: #1c1c1c;
-				color: #fff;
-				border: 1px solid #444;
-				margin: 20px 0;
-			}
-			.f1-table th,
-			.f1-table td {
-				padding: 10px 12px;
-				text-align: center;
-				border-bottom: 1px solid #444;
-			}
-			.f1-table th {
-				background-color: #2e2e2e;
-				font-family: "Formula1-Bold", sans-serif;
-				text-transform: uppercase;
-				font-size: 13px;
-			}
-			.f1-table td:first-child {
-				padding: 5px;
-			}
-			.f1-table tbody tr:nth-child(odd) {
-				background-color: #252525;
-			}
-			.f1-table tbody tr:hover {
-				background-color: #333;
-			}
+.tab-content.active {
+	display: block;
+}
 
-			#table1 .f1-table td:nth-child(1),
-			#table3 .f1-table td:nth-child(1) 
-      {
-				color: #ff1e00;
-			}
+.f1-table {
+	font-family: "Formula1", sans-serif;
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #1c1c1c;
+	color: #fff;
+	border: 1px solid #444;
+	margin: 20px 0;
+}
 
-			#table3 .f1-table td:nth-child(5) 
-      {
-				color: #00fd54;
-			}
+.f1-table th,
+.f1-table td {
+	padding: 10px 12px;
+	text-align: center;
+	border-bottom: 1px solid #444;
+}
 
-			#table1 .f1-table td:last-child,
-			#table3 .f1-table td:last-child
-      {
-				font-weight: bold;
-				color: #ffd700;
-			}
+.f1-table th {
+	background-color: #2e2e2e;
+	font-family: "Formula1-Bold", sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+}
 
-			#table2 .f1-table td:last-child
-      {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-			}
+.f1-table td:first-child {
+	padding: 5px;
+}
 
-			.car-icon {
-				width: 32px;
-				height: auto;
-				display: block;
-				margin: 0 auto;
-			}
-      #table1 .f1-table th:nth-child(5),
-			#table1 .f1-table td:nth-child(5) 
-      {
-				background-color: #0047ab;
-				color: #fff;
-				font-weight: bold;
-			}
+.f1-table tbody tr:nth-child(odd) {
+	background-color: #252525;
+}
 
-			#table1 .f1-table tr:nth-child(odd) td:nth-child(5)  
-      {
-				background-color: #003886;
-				color: #fff;
-				font-weight: bold;
-      }
+.f1-table tbody tr:hover {
+	background-color: #333;
+}
 
-			.car-placeholder {
-				width: 32px;
-				height: 20px;
-				background: linear-gradient(
-					135deg,
-					var(--color-left) 50%,
-					var(--color-right) 50%
-				);
-				border: 1px solid #444;
-				box-sizing: border-box;
-			}
+#table1 .f1-table td:nth-child(1),
+#table3 .f1-table td:nth-child(1) {
+	color: #ff1e00;
+}
+
+#table3 .f1-table td:nth-child(5) {
+	color: #00fd54;
+}
+
+#table1 .f1-table td:last-child,
+#table3 .f1-table td:last-child {
+	font-weight: bold;
+	color: #ffd700;
+}
+
+#table2 .f1-table td:last-child {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.car-icon {
+	width: 32px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+#table1 .f1-table th:nth-child(5),
+#table1 .f1-table td:nth-child(5) {
+	background-color: #0047ab;
+	color: #fff;
+	font-weight: bold;
+}
+
+#table1 .f1-table tr:nth-child(odd) td:nth-child(5) {
+	background-color: #003886;
+	color: #fff;
+	font-weight: bold;
+}
+
+.car-placeholder {
+	width: 32px;
+	height: 20px;
+	background: linear-gradient(135deg,
+			var(--color-left) 50%,
+			var(--color-right) 50%);
+	border: 1px solid #444;
+	box-sizing: border-box;
+}

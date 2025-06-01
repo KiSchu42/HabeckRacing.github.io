@@ -1,9 +1,0 @@
-async function loadContent(id, file) {
-  const container = document.getElementById(id);
-  const response = await fetch(file);
-  container.innerHTML = await response.text();
-}
-
-loadContent("gesamtwertung", "table1.html");
-loadContent("nachrichten", "table2.html");
-loadContent("rennen", "table3.html");
