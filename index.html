@@ -2,7 +2,7 @@
 <html lang="de">
 	<head>
 		<meta charset="UTF-8" />
-		<title>F1 Tabelle</title>
+		<title>Iris Z Cup - Informationen</title>
 		<style>
 			@font-face {
 				font-family: "Formula1";
@@ -14,7 +14,27 @@
 			}
 			body {
 				background-color: #121212;
+        font-family: "Formula1", sans-serif;
+        color: #fff;
 			}
+
+
+      h1 {
+        font-family: "Formula1-Bold", sans-serif; 
+      }
+
+      h2 {
+        font-family: "Formula1-Bold", sans-serif; 
+      }
+      
+      h3 {
+        font-size: small;
+      }
+
+      span.smaller {
+        font-size: smaller;
+      }
+
 			.tabs {
 				display: flex;
 				gap: 10px;
@@ -22,6 +42,7 @@
 			}
 
 			.tab-button {
+        font-family: "Formula1";
 				padding: 8px 16px;
 				background: #2e2e2e;
         color: white;
@@ -73,25 +94,51 @@
 			.f1-table tbody tr:hover {
 				background-color: #333;
 			}
-			.f1-table td:nth-child(1) {
+
+			#table1 .f1-table td:nth-child(1),
+			#table3 .f1-table td:nth-child(1) 
+      {
 				color: #ff1e00;
 			}
-			.f1-table td:last-child {
+
+			#table3 .f1-table td:nth-child(5) 
+      {
+				color: #00fd54;
+			}
+
+			#table1 .f1-table td:last-child,
+			#table3 .f1-table td:last-child
+      {
 				font-weight: bold;
 				color: #ffd700;
 			}
+
+			#table2 .f1-table td:last-child
+      {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+			}
+
 			.car-icon {
 				width: 32px;
 				height: auto;
 				display: block;
 				margin: 0 auto;
 			}
-			.f1-table th:nth-child(5),
-			.f1-table td:nth-child(5) {
+      #table1 .f1-table th:nth-child(5),
+			#table1 .f1-table td:nth-child(5) 
+      {
 				background-color: #0047ab;
 				color: #fff;
 				font-weight: bold;
 			}
+
+			#table1 .f1-table tr:nth-child(odd) td:nth-child(5)  
+      {
+				background-color: #003886;
+				color: #fff;
+				font-weight: bold;
+      }
+
 			.car-placeholder {
 				width: 32px;
 				height: 20px;
@@ -208,27 +255,175 @@
 					</tr>
 				</tbody>
 			</table>
-			<table class="f1-table">
+		</div>
+		<div class="tab-content" id="table2">
+      <!-- Tabelle 2 -->
+      <table class="f1-table">
+        <thead>
+          <tr>
+            <th colspan="2" style="text-align: left">Nachrichten / Bemerkungen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01.06.2025<br>19:05</td>
+            <td style="text-align: left">
+              Das Team "Team Autohaus" tritt dem Iris Z Cup mit dem Fahrern
+              Marcel Parker und dem Mechaniker Richard Parker teil
+            </td>
+          </tr>
+        </tbody>
+      </table>
+		</div>
+		<div class="tab-content" id="table3">
+			<!-- Tabelle 3 -->
+       <hr>
+       <h1>Iris Z Cup - 01.06.2025 - 18:00 Uhr</h1>
+       <h2>Qualifying</h2>
+       <table class="f1-table">
 				<thead>
 					<tr>
-						<th style="text-align: left">Nachrichten / Bemerkungen</th>
+						<th>Pos</th>
+						<th></th>
+						<th>Team</th>
+						<th>Fahrer</th>
+						<th>Rundenzeit</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td style="text-align: left">
-							Das Team "Team Autohaus" tritt dem Iris Z Cup mit dem Fahrern
-							Marcel Parker und dem Mechaniker Richard Parker teil
+            <td>1</td>
+						<td>
+							<div class="car-placeholder" style="--color-left: #570057; --color-right: #e5ff00"></div>
 						</td>
+						<td>Racer – Team 1</td>
+						<td>Mike Freeman</td>
+						<td>1:41,4</td>
+					</tr>
+					<tr>
+            <td>2</td>
+						<td>
+							<div class="car-placeholder" style="--color-left: #570057; --color-right: #ff9100"></div>
+						</td>
+						<td>Racer – Team 2</td>
+						<td>Dennis Abt</td>
+						<td>1:42,1</td>
+					</tr>
+					<tr>
+            <td>3</td>
+						<td>
+							<div
+								class="car-placeholder"
+								style="--color-left: #93dafe; --color-right: #ff7403"></div>
+						</td>
+						<td>Oil of Olaf</td>
+						<td>Olaf Gross</td>
+						<td>1:43,8</td>
+					</tr>
+					<tr>
+            <td>4</td>
+						<td>
+							<div
+								class="car-placeholder"
+								style="--color-left: #da1918; --color-right: #ffffff"></div>
+						</td>
+						<td>Team Redneck</td>
+						<td>Kenji Ito</td>
+						<td>DNS</td>
 					</tr>
 				</tbody>
 			</table>
-		</div>
-		<div class="tab-content" id="table2">
-			<!-- Tabelle 2 -->
-		</div>
-		<div class="tab-content" id="table3">
-			<!-- Tabelle 3 -->
+      <h2>Rennen</h2>
+      <h3>Nürburgring GP - 15 Runden</h3>
+       <table class="f1-table">
+				<thead>
+					<tr>
+						<th>Pos</th>
+						<th></th>
+						<th>Team</th>
+						<th>Fahrer</th>
+						<th>Pit</th>
+						<th>Gesamtzeit</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+            <td>1</td>
+						<td>
+							<div class="car-placeholder" style="--color-left: #570057; --color-right: #e5ff00"></div>
+						</td>
+						<td>Racer – Team 1</td>
+						<td>Mike Freeman</td>
+            <td>0</td>
+						<td>FOLGT<br><span class="smaller">+ 0:00,00</span></td>
+					</tr>
+					<tr>
+            <td>2</td>
+						<td>
+							<div class="car-placeholder" style="--color-left: #570057; --color-right: #ff9100"></div>
+						</td>
+						<td>Racer – Team 2</td>
+						<td>Dennis Abt</td>
+            <td>0</td>
+						<td>FOLGT<br><span class="smaller">+ 0:00,00</span></td>
+					</tr>
+					<tr>
+            <td>3</td>
+						<td>
+							<div
+								class="car-placeholder"
+								style="--color-left: #93dafe; --color-right: #ff7403"></div>
+						</td>
+						<td>Oil of Olaf</td>
+						<td>Olaf Gross</td>
+            <td>0</td>
+						<td>FOLGT<br><span class="smaller">+ 0:00,00</span></td>
+					</tr>
+					<tr>
+            <td>4</td>
+						<td>
+							<div
+								class="car-placeholder"
+								style="--color-left: #da1918; --color-right: #ffffff"></div>
+						</td>
+						<td>Team Redneck</td>
+						<td>Kenji Ito</td>
+						<td>0</td>
+						<td>DNS</td>
+					</tr>
+				</tbody>
+			</table>
+      <hr>
+      <h2>Glossar</h2>
+      <table class="f1-table">
+        <thead>
+          <tr>
+            <th style="text-align: left"></th>
+            <th style="text-align: left">Beschreibung</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DNS</td>
+            <td style="text-align: left">
+              Did Not Start - Der Fahrer hat nicht am Rennen teilgenommen.
+            </td>
+          </tr>
+          <tr>
+            <td>DNF</td>
+            <td style="text-align: left">
+              Did Not Finish - Der Fahrer hat das Rennen nicht beendet.
+            </td>
+          </tr>
+          <tr>
+            <td>DSQ</td>
+            <td style="text-align: left">
+              Disqualified - Der Fahrer wurde disqualifiziert und darf nicht
+              weiterfahren.
+            </td>
+          </tr>
+        </tbody>
+      </table>
 		</div>
 		<script>
 			document.querySelectorAll(".tab-button").forEach((button) => {
