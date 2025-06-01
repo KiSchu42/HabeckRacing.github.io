@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<title>F1 Tabelle</title>
+		<style>
+			@font-face {
+				font-family: "Formula1";
+				src: url("Formula1-Regular.otf") format("opentype");
+			}
+			@font-face {
+				font-family: "Formula1-Bold";
+				src: url("Formula1-Bold.otf") format("opentype");
+			}
+			body {
+				background-color: #121212;
+			}
+			.tabs {
+				display: flex;
+				gap: 10px;
+				margin-bottom: 16px;
+			}
+
+			.tab-button {
+				padding: 8px 16px;
+				background: #2e2e2e;
+        color: white;
+				border: none;
+				cursor: pointer;
+			}
+
+			.tab-button.active {
+				background: #0047ab;
+				color: white;
+				font-weight: bold;
+			}
+
+			.tab-content {
+				display: none;
+			}
+
+			.tab-content.active {
+				display: block;
+			}
+
+			.f1-table {
+				font-family: "Formula1", sans-serif;
+				width: 100%;
+				border-collapse: collapse;
+				background-color: #1c1c1c;
+				color: #fff;
+				border: 1px solid #444;
+				margin: 20px 0;
+			}
+			.f1-table th,
+			.f1-table td {
+				padding: 10px 12px;
+				text-align: center;
+				border-bottom: 1px solid #444;
+			}
+			.f1-table th {
+				background-color: #2e2e2e;
+				font-family: "Formula1-Bold", sans-serif;
+				text-transform: uppercase;
+				font-size: 13px;
+			}
+			.f1-table td:first-child {
+				padding: 5px;
+			}
+			.f1-table tbody tr:nth-child(odd) {
+				background-color: #252525;
+			}
+			.f1-table tbody tr:hover {
+				background-color: #333;
+			}
+			.f1-table td:nth-child(1) {
+				color: #ff1e00;
+			}
+			.f1-table td:last-child {
+				font-weight: bold;
+				color: #ffd700;
+			}
+			.car-icon {
+				width: 32px;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+			}
+			.f1-table th:nth-child(5),
+			.f1-table td:nth-child(5) {
+				background-color: #0047ab;
+				color: #fff;
+				font-weight: bold;
+			}
+			.car-placeholder {
+				width: 32px;
+				height: 20px;
+				background: linear-gradient(
+					135deg,
+					var(--color-left) 50%,
+					var(--color-right) 50%
+				);
+				border: 1px solid #444;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="tabs">
+			<button class="tab-button active" data-target="table1">Gesamtwertung</button>
+			<button class="tab-button" data-target="table2">Nachrichten</button>
+			<button class="tab-button" data-target="table3">Letztes Rennen</button>
+		</div>
+
+		<div class="tab-content active" id="table1">
+			<!-- Tabelle 1 -->
+			<table class="f1-table">
+				<thead>
+					<tr>
+						<th>Pos</th>
+						<th></th>
+						<th>Team</th>
+						<th>Fahrer</th>
+						<th>Rennen 1</th>
+						<th>Rennen 2</th>
+						<th>Rennen 3</th>
+						<th>Rennen 4</th>
+						<th>Rennen 5</th>
+						<th>Gesamt</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+            <td>1</td>
+						<td>
+							<div class="car-placeholder" style="--color-left: #570057; --color-right: #e5ff00"></div>
+						</td>
+						<td>Racer – Team 1</td>
+						<td>Mike Freeman</td>
+						<td>10</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>10</td>
+					</tr>
+					<tr>
+            <td>2</td>
+						<td>
+							<div class="car-placeholder" style="--color-left: #570057; --color-right: #ff9100"></div>
+						</td>
+						<td>Racer – Team 2</td>
+						<td>Dennis Abt</td>
+						<td>8</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>8</td>
+					</tr>
+					<tr>
+            <td>3</td>
+						<td>
+							<div
+								class="car-placeholder"
+								style="--color-left: #93dafe; --color-right: #ff7403"></div>
+						</td>
+						<td>Oil of Olaf</td>
+						<td>Olaf Gross</td>
+						<td>6</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>6</td>
+					</tr>
+					<tr>
+            <td>4</td>
+						<td>
+							<div
+								class="car-placeholder"
+								style="--color-left: #da1918; --color-right: #ffffff"></div>
+						</td>
+						<td>Team Redneck</td>
+						<td>Kenji Ito</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+            <td>5</td>
+						<td>
+							<div
+								class="car-placeholder"
+								style="--color-left: #fff; --color-right: #ffffff"></div>
+						</td>
+						<td>Team Autohaus</td>
+						<td>Marcel Parker</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="f1-table">
+				<thead>
+					<tr>
+						<th style="text-align: left">Nachrichten / Bemerkungen</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="text-align: left">
+							Das Team "Team Autohaus" tritt dem Iris Z Cup mit dem Fahrern
+							Marcel Parker und dem Mechaniker Richard Parker teil
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="tab-content" id="table2">
+			<!-- Tabelle 2 -->
+		</div>
+		<div class="tab-content" id="table3">
+			<!-- Tabelle 3 -->
+		</div>
+		<script>
+			document.querySelectorAll(".tab-button").forEach((button) => {
+				button.addEventListener("click", () => {
+					const targetId = button.dataset.target;
+
+					document
+						.querySelectorAll(".tab-button")
+						.forEach((b) => b.classList.remove("active"));
+					button.classList.add("active");
+
+					document
+						.querySelectorAll(".tab-content")
+						.forEach((c) => c.classList.remove("active"));
+					document.getElementById(targetId).classList.add("active");
+				});
+			});
+		</script>
+	</body>
+</html>
