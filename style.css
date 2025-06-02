@@ -4,7 +4,6 @@ body {
 	color: #fff;
 }
 
-
 h1 {
 	font-family: "Formula1-Bold", sans-serif;
 }
@@ -133,4 +132,18 @@ span.smaller {
 			var(--color-right) 30%);
 	border: 1px solid #444;
 	box-sizing: border-box;
+}
+
+marquee {
+	font-family: "Formula1", sans-serif;
+	font-size: 16px;
+	color: #fff;
+	background-color: #121212;
+	padding: 10px;
+	border: 1px solid #444;
+}
+
+marquee span {
+	font-weight: bold;
+	color: #ff1e00;
 }
