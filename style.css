@@ -17,7 +17,12 @@ h3 {
 }
 
 span.smaller {
-	font-size: smaller;
+	font-size: 12px;
+	color: #c0c0c0;
+}
+
+.deltatime span.smaller {
+	color:rgb(201, 97, 0)
 }
 
 .tabs {
@@ -93,15 +98,15 @@ span.smaller {
 
 #table1 .f1-table td:nth-child(2),
 #table3 .f1-table td:nth-child(2) {
-	width: 13%;
+	min-width: 100px;
 }
 
-#table3 .f1-table td:nth-child(4) {
+#table3 .f1-table td:nth-child(3) {
 	color: #00fd54;
 }
 
 #table1 .f1-table td:last-child,
-#table3 .f1-table td:last-child {
+#table3 .f1-table td:last-child td:not(.glossary) {
 	font-weight: bold;
 	color: #ffd700;
 }
@@ -133,7 +138,7 @@ span.smaller {
 	box-sizing: border-box;
 }
 
-.team { float: left; margin-right: 10%; box-sizing: border-box; }
+.team { float: left; margin-right: 10%; box-sizing: border-box; text-align: left;}
 .timeboard tr { height: 60px; }
 
 marquee {
@@ -152,4 +157,8 @@ marquee span {
 
 marquee.sponsors img {
 	height: 100px;
+}
+
+.glossary {
+	color: #fff;
 }
