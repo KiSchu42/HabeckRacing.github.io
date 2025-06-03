@@ -141,23 +141,56 @@ span.smaller {
 .team { float: left; margin-right: 10%; box-sizing: border-box; text-align: left;}
 .timeboard tr { height: 60px; }
 
-marquee {
-	font-family: "Formula1", sans-serif;
-	font-size: 16px;
-	color: #fff;
-	background-color: #121212;
-	padding: 10px;
-	border: 1px solid #444;
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #1a1a1a;
+  color: white;
+  border: #2c2c2c solid 1px;
+  padding: 10px 0px;
 }
 
-marquee span {
-	font-weight: bold;
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+  animation: scroll-left 30s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Text-Marquee spezifisch */
+.marquee-text .marquee-track span {
+  display: inline-block;
+  padding-right: 60px;
+  font-size: 1rem;
+  font-family: 'Formula1', sans-serif;
+}
+
+.marquee-text .marquee-track span b{
 	color: #ff1e00;
 }
 
-marquee.sponsors img {
-	height: 100px;
+/* Logo-Marquee spezifisch */
+.marquee-logos .marquee-track {
+  gap: 80px;
+  padding: 10px 0;
 }
+
+.marquee-logos img {
+  height: 40px;
+  flex-shrink: 0;
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 
 .glossary {
 	color: #fff;
