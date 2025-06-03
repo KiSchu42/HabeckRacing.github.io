@@ -106,7 +106,7 @@ span.smaller {
 }
 
 #table1 .f1-table td:last-child,
-#table3 .f1-table td:last-child td:not(.glossary) {
+#table3 .f1-table:not(.glossar) td:last-child {
 	font-weight: bold;
 	color: #ffd700;
 }
