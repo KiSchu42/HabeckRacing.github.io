@@ -115,14 +115,14 @@ span.smaller {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-#table1 .f1-table th:nth-child(3),
-#table1 .f1-table td:nth-child(3) {
+#table1 .f1-table th:nth-child(4),
+#table1 .f1-table td:nth-child(4) {
 	background-color: #0047ab;
 	color: #fff;
 	font-weight: bold;
 }
 
-#table1 .f1-table tr:nth-child(odd) td:nth-child(3) {
+#table1 .f1-table tr:nth-child(odd) td:nth-child(4) {
 	background-color: #003886;
 	color: #fff;
 	font-weight: bold;
